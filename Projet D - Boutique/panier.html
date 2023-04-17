@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Panier - Boutique en ligne</title>
+    <style>
+      .panier {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f5f5f5;
+      }
+
+      .total {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      .loyalty {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .loyalty-title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .progress {
+        display: flex;
+        background-color: #e0e0e0;
+        height: 0.3rem;
+        border-radius: 0.1rem;
+        overflow: hidden;
+        margin-bottom: 0.1rem;
+      }
+
+      .progress-bar {
+        background-color: #780101;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">Boutique en ligne</a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="product.html">Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="panier1">
+          <a href="panier.html">Panier (0)</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="panier">
+        <h2>Votre panier</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Produit</th>
+              <th>Prix</th>
+              <th>Quantité</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Produit 1</td>
+              <td>29,99 €</td>
+              <td>2</td>
+              <td>59,98 €</td>
+            </tr>
+            <tr>
+              <td>Produit 2</td>
+              <td>19,99 €</td>
+              <td>1</td>
+              <td>19,99 €</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="total">Total : 79,97 €</div>
+        <button class="btn">Passer à la caisse</button>
+
+        <div class="loyalty">
+          <p class="loyalty-title">Votre fidélitée (avant) :</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+        </div>
+        <div class="loyalty">
+          <p class="loyalty-title">Votre fidélitée (après) :</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 40%"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-colonne">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="/apropos">À propos</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="cgu.html">Conditions générales d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-colonne">
+        <h3>Contact</h3>
+        <p>123 Rue de la Boutique<br />75000 Paris<br />France</p>
+        <p>Tél : +33 1 23 45 67 89</p>
+        <p>Email : contact@boutique-en-ligne.fr</p>
+      </div>
+      <div class="footer-colonne">
+        <h3>Suivez-nous</h3>
+        <ul class="social">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

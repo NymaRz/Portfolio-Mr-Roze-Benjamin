@@ -1,0 +1,162 @@
+/* Général */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .panier1 {
+    font-size: 1.1rem;
+  }
+  
+  /* Bannière */
+  .banniere {
+    background-image: url('banniere.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ac0a0a;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .banniere h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Produits */
+  #produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .produit {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .produit img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .prix {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  .btn1 {
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 0.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    display: inline-block;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #ffffff;
+    color: #c10000;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-colonne {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 1rem;
+  }
+  
+  .footer-colonne ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-colonne ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-colonne h3 {
+    margin-bottom: 1.5rem;
+  }
+  body {
+    background-image: url('animated-background.gif');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

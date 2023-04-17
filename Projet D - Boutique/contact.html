@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact - Boutique en ligne</title>
+  <style>
+    .contact {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, input, textarea {
+      margin-bottom: 1rem;
+    }
+
+    input, textarea {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 0.5rem;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .contact-form, .account, .loyalty-card {
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .loyalty-card {
+      text-align: center;
+    }
+
+    .loyalty-card img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html">Boutique en ligne</a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="product.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="panier">
+            <a href="panier.html">Panier (0)</a>
+          </div>
+        </nav>
+      </header>
+  <!-- Copie l'en-tête et le pied de page de index.html -->
+  <main>
+    <section class="contact">
+      <h2>Contact et compte</h2>
+      <div class="contact-container">
+        <div class="loyalty-card">
+        <h3>Carte de fidélité</h3>
+        <img src="loyalty-card.jpg" alt="Carte de fidélité">
+        <p>Obtenez des avantages exclusifs en rejoignant notre programme de fidélité.</p>
+        <button class="btn">En savoir plus </button>
+        </div>
+
+        <div class="account">
+          <h3>Création de compte</h3>
+          <form action="/register" method="POST">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="btn">Créer un compte</button>
+          </form>
+        </div>
+        <div class="contact-form">
+            <h3>Contactez-nous</h3>
+            <form action="/contact" method="POST">
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <button type="submit" class="btn">Envoyer</button>
+            </form>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-colonne">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="/apropos">À propos</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="cgu.html">Conditions générales d'utilisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-colonne">
+        <h3>Contact</h3>
+        <p>123 Rue de la Boutique<br>75000 Paris<br>France</p>
+        <p>Tél : +33 1 23 45 67 89</p>
+        <p>Email : contact@boutique-en-ligne.fr</p>
+      </div>
+      <div class="footer-colonne">
+        <h3>Suivez-nous</h3>
+        <ul class="social">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+  </html>
