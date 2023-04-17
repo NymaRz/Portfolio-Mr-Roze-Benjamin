@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Benjamin Rozé</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body onload="startAnimation()">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Connaissances</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue</h2>
+    </section>
+
+    <section id="apropos">
+      <div class="apropos-content">
+        <div class="apropos-image">
+          <img src="image/profil.jpg" alt="Votre photo">
+        </div>
+        <div class="apropos-text">
+          <p> Benjamin 27 ans,mordu de technologie et de jeux vidéo. <br> Je me lance dans l'aventure en tant que développeur web junior. <br>
+            Mon but est de créer des sites professionels et innovants, et
+            d'apprendre toujours plus.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projets">
+      <article>
+        <h3>Boutique en Ligne</h3>
+        <img src="image/Boutique.jpg" alt="Description du projet 1">
+        <p>Découvrez notre boutique en ligne vendant des produits. <br> Les langages utilisés : HTML, CSS & JS .</p>
+        <a href="image/Boutique.jpg"><button class="butt"> Voir le projet</button></a>
+
+      </article>
+      <article>
+        <h3>Site Web de Restaurant</h3>
+        <img src="image/restau.png" alt="Description du projet 2">
+        <p>Découvrez ce superbe restaurant, la carte et les disponibilités de réservations <br> Les langages utilisés : HTML, CSS & JS .</p>
+        <a href="image/restau.png"> <button class="butt"> Voir le projet</button></a>
+
+      </article>     
+      <article>
+        <h3>Mini-jeu Snake</h3>
+        <img src="image/snake2.png" alt="Description du projet 2">
+        <p>Découvrez ce jeu Snake, guidez le serpent pour attraper les fruits et grandir. <br> Les langages utilisés : HTML, CSS & JS .</p>
+        <a href="image/snake2.png"><button class="butt"> Voir le projet</button></a>
+
+      </article>
+      <article>
+        <h3>PortFolio</h3>
+        <img src="image/portefolio.png" alt="Description du projet 2">
+        <p>Découvrez mon portefolio. <br> Les langages utilisés : HTML, CSS & JS .</p>
+        <a href="image/portefolio.png"><button class="butt"> Voir le projet</button></a>
+      </article>
+      
+    </section>
+
+    <section id="competences">
+      <h2>Connaissances</h2>
+      <div class="competence">
+        <label>FRONT-END</label>
+        <div class="progress-bar">
+          <div class="progress" style="width: 50%;"></div>
+        </div>
+        <span>50%</span>
+      </div>
+      <div class="competence">
+        <label>HTML</label>
+        <div class="progress-bar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+        <span>60%</span>
+      </div>
+      <div class="competence">
+        <label>CSS</label>
+        <div class="progress-bar">
+          <div class="progress" style="width: 45%;"></div>
+        </div>
+        <span>45%</span>
+      </div>
+      <div class="competence">
+        <label>JS</label>
+        <div class="progress-bar">
+          <div class="progress" style="width: 15%;"></div>
+        </div>
+        <span>15%</span>
+      </div>
+      
+      <div class="competence">
+        <label>PHP</label>
+        <div class="progress-bar">
+          <div class="progress" style="width: 5%;"></div>
+        </div>
+        <span>5%</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <form action="contact.php" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <div class="social-bubble">
+          <a href="https://github.com">
+            <img src="image/25231.png" alt="GitHub">
+          </a>
+        </div>
+        <div class="social-bubble">
+          <a href="https://linkedin.com">
+            <img src="image/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+      <p>Copyright © 2023
+        <span id="current-year"></span>
+        Mon Site Web. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
